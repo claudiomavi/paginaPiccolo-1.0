@@ -180,6 +180,9 @@ header a:hover {
 }
 
 #caracteristicas .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80vh;
   text-align: center;
   padding: 250px 12px;
