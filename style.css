@@ -117,6 +117,9 @@ header a:hover {
 }
 
 #somos-proya .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80vh;
   text-align: center;
   padding: 200px 12px;
