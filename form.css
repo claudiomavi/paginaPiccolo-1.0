@@ -123,6 +123,23 @@ textarea {
   background-color: rgb(101, 33, 165);
 }
 
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+  font-size: 20px;
+}
+
+footer .container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 850px) {
   header {
     position: fixed;
@@ -150,5 +167,9 @@ textarea {
 
   form {
     width: 50%;
+  }
+
+  footer .container {
+    justify-content: flex-end;
   }
 }
