@@ -282,6 +282,8 @@ footer .container {
     background-position: center center;
     height: 500px;
     width: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
   #nuestros-programas .programas {
@@ -319,6 +321,8 @@ footer .container {
         rgba(0, 0, 0, 0.5)
       ),
       url("media/individual.jpg");
+    background-size: cover;
+    background-position: center center;
   }
 
   .carta:nth-child(2) {
@@ -328,6 +332,8 @@ footer .container {
         rgba(0, 0, 0, 0.5)
       ),
       url("media/grupales.jpg");
+    background-size: cover;
+    background-position: center center;
   }
 
   .carta:nth-child(3) {
@@ -337,6 +343,8 @@ footer .container {
         rgba(0, 0, 0, 0.5)
       ),
       url("media/mentorias.jpg");
+    background-size: cover;
+    background-position: center center;
   }
 
   #caracteristicas .img-container {
@@ -345,6 +353,8 @@ footer .container {
     background-position: center center;
     height: 500px;
     width: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
   #caracteristicas .container {
