@@ -1,3 +1,151 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #555764;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 10px 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.6em;
+  background-color: blueviolet;
+  border-radius: 90px 90px 30px 30px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form-content {
+  background: linear-gradient(
+      50deg,
+      rgba(40, 42, 55, 1) 50%,
+      rgba(40, 42, 55, 0.7)
+    ),
+    url(media/grupales.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  width: 1000px;
+  border-radius: 25px;
+  margin: 20vh auto;
+}
+
+.form-content h2 {
+  color: #f4f6f9;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+label {
+  font-size: 17px;
+  color: #959aab;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 17px 14px;
+  background-color: #333646;
+  border: none;
+  font-size: 15px;
+  color: #f4f6f9;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+:focus {
+  outline: 1px solid blueviolet;
+}
+
+.btn {
+  background-color: blueviolet;
+  width: 150px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #219bf9;
+}
+
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  #formulario {
+    padding: 30px;
+  }
+
+  .form-content {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
 }
