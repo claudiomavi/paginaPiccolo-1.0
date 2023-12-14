@@ -150,6 +150,10 @@ input[type="tel"] {
   transform: translateY(-50%) rotate(225deg);
 }
 
+.selected-option strong {
+  color: #959aab;
+}
+
 .select-box .options {
   position: absolute;
   top: 4rem;
