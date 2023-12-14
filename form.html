@@ -6,6 +6,7 @@
     <title>Contacta Con Nosotros</title>
     <link rel="stylesheet" href="form.css" />
     <link rel="shortcut icon" href="media/favicon-32x32.png" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   </head>
   <body>
     <header>
@@ -33,7 +34,19 @@
           <input type="email" name="E-mail" id="email" />
 
           <label for="telefono">Telefono</label>
-          <input type="tel" name="Telefono" id="telefono" />
+          <div class="select-box">
+            <div class="selected-option">
+              <div>
+                <span class="iconify" data-icon="flag:gb-4x3"></span>
+                <strong>+44</strong>
+              </div>
+              <input type="tel" name="Telefono" id="telefono" />
+            </div>
+            <div class="options">
+              <input type="text" class="search-box" placeholder="Buscar Pais" />
+              <ol></ol>
+            </div>
+          </div>
 
           <label for="subject">Asunto</label>
           <input type="text" name="Asunto" id="subject" />
@@ -63,5 +76,6 @@
         <p>&copy; tamipilates 2023</p>
       </div>
     </footer>
+    <script src="form.js"></script>
   </body>
 </html>
