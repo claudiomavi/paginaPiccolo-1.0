@@ -1,3 +1,2 @@
 1. image gallery https://www.youtube.com/watch?v=Trw_9lisYVY
-2. dynamic nav bar
 3. footer with social networks
