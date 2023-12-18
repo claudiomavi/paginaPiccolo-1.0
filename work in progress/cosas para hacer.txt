@@ -1,2 +1,2 @@
-1. image gallery https://www.youtube.com/watch?v=Trw_9lisYVY
+1. integrar image gallery
 3. footer with social networks
