@@ -1,2 +1,1 @@
-1. integrar image gallery
-3. footer with social networks
+1. footer with social networks
