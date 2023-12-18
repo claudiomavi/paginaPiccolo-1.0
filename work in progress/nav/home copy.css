@@ -37,9 +37,6 @@ header {
   position: relative;
   padding: 0 2rem;
   background-color: rgb(245, 245, 245);
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
 
 .navbar {
@@ -84,7 +81,7 @@ header {
 }
 
 .navbar .toggle_btn {
-  color: black;
+  color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
   display: block;
