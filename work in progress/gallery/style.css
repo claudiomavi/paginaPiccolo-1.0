@@ -48,8 +48,8 @@
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 769px) {
-  .container.box {
+@media (max-width: 769px) {
+  .container .box {
     flex-direction: column;
   }
 
@@ -58,7 +58,7 @@
   }
 }
 
-@media only screen and (max-width: 643px) {
+@media (max-width: 643px) {
   .container .heading {
     width: 100%;
   }
