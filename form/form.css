@@ -19,41 +19,116 @@ body {
 }
 
 header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 2rem;
   background-color: rgb(245, 245, 245);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
-header .logo {
+.navbar {
+  width: 100%;
+  height: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.navbar a:hover {
+  color: blueviolet;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: blueviolet;
+  border-radius: 90px 90px 30px 30px;
   margin: 10px 0;
   padding: 25px 30px;
   font-weight: bold;
   color: white;
   font-size: 1.6em;
-  background-color: blueviolet;
-  border-radius: 90px 90px 30px 30px;
 }
 
-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navbar .links {
+  display: none;
 }
 
-header nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
+.navbar .toggle_btn {
   color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
 }
 
-header a:hover {
-  color: blueviolet;
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+.dropdown_menu {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 90px;
+  height: 0;
+  width: 300px;
+  background: rgba(235, 228, 228, 0.8);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 122px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #formulario {
@@ -287,20 +362,17 @@ footer .container {
 }
 
 @media (min-width: 850px) {
-  header {
-    position: fixed;
-    width: 100%;
+  .navbar .links {
+    display: flex;
+    gap: 2rem;
   }
 
-  header .container {
-    flex-direction: row;
-    justify-content: space-around;
+  .navbar .toggle_btn {
+    display: none;
   }
 
-  header nav {
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
+  .dropdown_menu {
+    display: none;
   }
 
   #formulario {
@@ -317,5 +389,12 @@ footer .container {
 
   footer .container {
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
   }
 }
