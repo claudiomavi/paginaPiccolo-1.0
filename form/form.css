@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
 	--primary: #111;
 	--secondary: #fd0;
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	background-color: #555764;
 }
 
@@ -115,7 +117,7 @@ header {
 }
 
 .dropdown_menu.open {
-	height: 122px;
+	height: 165px;
 }
 
 .dropdown_menu li {
