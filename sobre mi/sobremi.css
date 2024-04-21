@@ -181,7 +181,7 @@ button:hover {
 
 #somos-proya .img-container {
 	padding: 20px 10px;
-	background-image: url("media/quien-somos.jpg");
+	background-image: url("../media/quien-somos.jpg");
 	background-size: cover;
 	background-position: center center;
 	height: 200px;
