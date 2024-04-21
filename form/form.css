@@ -117,7 +117,7 @@ header {
 }
 
 .dropdown_menu.open {
-	height: 165px;
+	height: 210px;
 }
 
 .dropdown_menu li {
@@ -147,7 +147,7 @@ header {
 			rgba(40, 42, 55, 1) 50%,
 			rgba(40, 42, 55, 0.7)
 		),
-		url(media/grupales.jpg);
+		url(../media/grupales.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -379,13 +379,6 @@ footer .container {
 
 	#formulario {
 		padding: auto;
-	}
-
-	.form-content {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
 	}
 
 	form {
