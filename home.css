@@ -182,7 +182,7 @@ button:hover {
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
 		),
-		url("media/pilates.jpg");
+		url("media/header.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -200,9 +200,20 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 80vh;
+	flex-direction: column;
 	text-align: center;
-	padding: 200px 12px;
+	padding: 100px 12px;
+}
+
+#somos-proya .img-container {
+	padding: 20px 10px;
+	background-image: url("media/quien-somos.jpg");
+	background-size: cover;
+	background-position: center center;
+	height: 200px;
+	width: 200px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 #nuestros-programas {
@@ -223,6 +234,14 @@ button:hover {
 #nuestros-programas .carta hr {
 	border: 1px solid #333;
 	width: 75%;
+}
+
+#nuestros-programas .carta:hover {
+	color: beige;
+	background-color: #333;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 #caracteristicas .container {
@@ -317,14 +336,13 @@ footer .container {
 		margin-top: 0px;
 	}
 
+	#somos-proya .container {
+		flex-direction: row;
+	}
+
 	#somos-proya .img-container {
-		background-image: url("media/quien-somos.jpg");
-		background-size: cover;
-		background-position: center center;
 		height: 500px;
 		width: 400px;
-		border-radius: 20px;
-		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 	}
 
 	#nuestros-programas .container {
