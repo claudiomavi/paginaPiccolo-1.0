@@ -170,7 +170,6 @@ button:hover {
 }
 
 .container {
-	max-width: 1400px;
 	margin: auto;
 }
 
@@ -263,6 +262,8 @@ button:hover {
 	height: 80vh;
 	text-align: center;
 	padding: 250px 12px;
+	background-color: var(--background);
+	color: var(--text);
 }
 
 #caracteristicas ul {
@@ -281,8 +282,8 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: var(--background);
-	color: var(--text);
+	background-color: var(--lightgreen);
+	color: var(--background);
 	height: 70vh;
 }
 
@@ -292,6 +293,7 @@ button:hover {
 
 #final button {
 	font-size: 6vw;
+	color: var(--background);
 }
 
 @media (min-width: 850px) {

@@ -4,6 +4,7 @@
 	overflow-y: hidden;
 	text-transform: capitalize;
 	list-style: none;
+	padding: 10px 20px;
 }
 
 .container {
@@ -44,7 +45,7 @@
 }
 
 .footer-links ul li a:hover {
-	color: var(--text);
+	color: var(--green);
 	padding-left: 6px;
 }
 
