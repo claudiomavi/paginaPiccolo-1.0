@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+	--rose: #f5dad2;
+	--background: #fcffe0;
+	--lightgreen: #bacd92;
+	--green: #75a47f;
+	--text: #333;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -38,7 +46,7 @@ header {
 	box-sizing: border-box;
 	position: relative;
 	padding: 0 2rem;
-	background-color: rgb(245, 245, 245);
+	background-color: var(--rose);
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -61,24 +69,24 @@ header {
 
 .navbar a {
 	text-decoration: none;
-	color: black;
+	color: var(--text);
 	font-size: 1rem;
 	font-weight: bolder;
 }
 
 .navbar a:hover {
-	color: blueviolet;
+	color: var(--green);
 }
 
 .navbar .logo a {
 	font-size: 1.5rem;
 	font-weight: bold;
-	background-color: blueviolet;
+	background-color: var(--lightgreen);
 	border-radius: 90px 90px 30px 30px;
 	margin: 10px 0;
 	padding: 25px 30px;
 	font-weight: bold;
-	color: white;
+	color: var(--text);
 	font-size: 1.6em;
 }
 
@@ -87,15 +95,15 @@ header {
 }
 
 .navbar .toggle_btn {
-	color: black;
+	color: var(--text);
 	font-size: 1.5rem;
 	cursor: pointer;
 	display: block;
 }
 
 .action_btn {
-	background-color: orange;
-	color: #fff;
+	background-color: var(--green);
+	color: var(--text);
 	padding: 0.5rem 1rem;
 	border: none;
 	outline: none;
@@ -107,7 +115,7 @@ header {
 
 .action_btn:hover {
 	scale: 1.05;
-	color: #fff;
+	color: var(--rose);
 }
 
 .action_btn:active {
@@ -121,7 +129,7 @@ header {
 	top: 90px;
 	height: 0;
 	width: 300px;
-	background: rgba(235, 228, 228, 0.8);
+	background: rgba(245, 218, 210, 0.8);
 	backdrop-filter: blur(50px);
 	border-radius: 10px;
 	overflow: hidden;
@@ -153,12 +161,12 @@ button {
 	border-radius: 15px;
 	border: 2px solid rgba(0, 0, 0, 0.3);
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-	color: white;
-	background-color: blueviolet;
+	color: var(--text);
+	background-color: var(--lightgreen);
 }
 
 button:hover {
-	background-color: rgb(101, 33, 165);
+	background-color: var(--green);
 }
 
 .container {
@@ -167,7 +175,7 @@ button:hover {
 }
 
 .color-acento {
-	color: blueviolet;
+	color: var(--lightgreen);
 }
 
 #hero {
@@ -189,7 +197,7 @@ button:hover {
 }
 
 #hero h1 {
-	color: white;
+	color: var(--background);
 }
 
 #hero button {
@@ -203,6 +211,8 @@ button:hover {
 	flex-direction: column;
 	text-align: center;
 	padding: 100px 12px;
+	background-color: var(--background);
+	color: var(--text);
 }
 
 #somos-proya .img-container {
@@ -217,12 +227,13 @@ button:hover {
 }
 
 #nuestros-programas {
-	color: #333;
+	color: var(--background);
+	background-color: var(--background);
 	text-align: center;
 }
 
 #nuestros-programas .carta {
-	background-color: beige;
+	background-color: var(--lightgreen);
 	padding: 30px 0px;
 	margin: 0;
 }
@@ -232,14 +243,14 @@ button:hover {
 }
 
 #nuestros-programas .carta hr {
-	border: 1px solid #333;
+	border: 1px solid var(--background);
 	width: 75%;
 	margin: 10px auto;
 }
 
 #nuestros-programas .carta:hover {
-	color: beige;
-	background-color: #333;
+	color: var(--lightgreen);
+	background-color: var(--background);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -270,8 +281,8 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: rgb(30, 30, 30);
-	color: white;
+	background-color: var(--background);
+	color: var(--text);
 	height: 70vh;
 }
 
