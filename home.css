@@ -234,6 +234,7 @@ button:hover {
 #nuestros-programas .carta hr {
 	border: 1px solid #333;
 	width: 75%;
+	margin: 10px auto;
 }
 
 #nuestros-programas .carta:hover {
@@ -280,22 +281,6 @@ button:hover {
 
 #final button {
 	font-size: 6vw;
-}
-
-footer {
-	background-color: rgb(230, 230, 230);
-}
-
-footer p {
-	margin: 0;
-	padding: 12px;
-	color: rgb(100, 100, 100);
-}
-
-footer .container {
-	height: 50px;
-	display: flex;
-	align-items: center;
 }
 
 @media (min-width: 850px) {
@@ -391,10 +376,6 @@ footer .container {
 
 	#final button {
 		font-size: 2em;
-	}
-
-	footer .container {
-		justify-content: flex-end;
 	}
 }
 
