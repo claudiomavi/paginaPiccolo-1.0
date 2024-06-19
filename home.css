@@ -189,7 +189,7 @@ button:hover {
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
 		),
-		url("media/header.JPG");
+		url("media/header.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -216,7 +216,7 @@ button:hover {
 
 #somos-proya .img-container {
 	padding: 20px 10px;
-	background-image: url("media/quien-somos.jpg");
+	background-image: url("media/quien-somos.webp");
 	background-size: cover;
 	background-position: center center;
 	height: 200px;
@@ -363,7 +363,7 @@ button:hover {
 	}
 
 	#caracteristicas .img-container {
-		background-image: url("media/caracteristicas.jpg");
+		background-image: url("media/caracteristicas.webp");
 		background-size: cover;
 		background-position: center center;
 		height: 500px;
